@@ -1,0 +1,33 @@
+.fa-heart {
+  color: red;
+}
+
+.rpsImgs {
+  width: auto;
+  height: 30vh;
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+.scale {
+  transition: 0.3s;
+}
+
+.scale:hover {
+  scale: 1.1;
+}
+
+.scale:active {
+  scale: 1;
+}
+
+.rpsChoices {
+  width: 10vw;
+  height: 10vw;
+}
+
+.btn {
+  border: none;
+}
