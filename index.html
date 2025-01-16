@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>RPS Game</title>
@@ -16,16 +16,24 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
 
   <body class="bg-info-subtle">
     <header>
       <div class="container-fluid my-3">
         <div class="row">
-          <div class="col-12 d-flex align-items-center justify-content-center text-center">
-            <p id="welcomeMsg" class="display-4 border-bottom border-2 border-dark rounded-3 p-3"></p>
+          <div
+            class="col-12 d-flex align-items-center justify-content-center text-center"
+          >
+            <p
+              id="welcomeMsg"
+              class="display-4 border-bottom border-2 border-dark rounded-3 p-3"
+            ></p>
           </div>
         </div>
       </div>
@@ -33,23 +41,39 @@
     <main>
       <div class="container d-none d-lg-block">
         <div class="row mb-5">
-          <div class="col-lg-6 d-flex justify-content-center align-items-center">
-            <i class="fa fa-heart fa-5x m-2" id="bigUserHeart1"></i>
-            <i class="fa fa-heart fa-5x m-2" id="bigUserHeart2"></i>
-            <i class="fa fa-heart fa-5x m-2" id="bigUserHeart3"></i>
+          <div
+            class="col-lg-6 d-flex justify-content-center align-items-center"
+          >
+            <i class="fa fa-heart fa-5x m-2" id="UserHeart1"></i>
+            <i class="fa fa-heart fa-5x m-2" id="UserHeart2"></i>
+            <i class="fa fa-heart fa-5x m-2" id="UserHeart3"></i>
           </div>
-          <div class="col-lg-6 d-flex justify-content-center align-items-center">
-            <i class="fa fa-heart fa-5x m-2" id="bigComputerHeart1"></i>
-            <i class="fa fa-heart fa-5x m-2" id="bigComputerHeart2"></i>
-            <i class="fa fa-heart fa-5x m-2" id="bigComputerHeart3"></i>
+          <div
+            class="col-lg-6 d-flex justify-content-center align-items-center"
+          >
+            <i class="fa fa-heart fa-5x m-2" id="ComputerHeart1"></i>
+            <i class="fa fa-heart fa-5x m-2" id="ComputerHeart2"></i>
+            <i class="fa fa-heart fa-5x m-2" id="ComputerHeart3"></i>
           </div>
         </div>
         <div class="row my-5">
-          <div class="col-lg-6 d-flex justify-content-center align-items-center">
-            <img src="imgs/Neutral.png" id="imgChange1" class="img-fluid rpsImgs">
+          <div
+            class="col-lg-6 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="imgs/Neutral.png"
+              id="imgChange1"
+              class="img-fluid rpsImgs"
+            />
           </div>
-          <div class="col-lg-6 d-flex justify-content-center align-items-center">
-            <img src="imgs/Neutral.png" id="imgChange2" class="img-fluid rpsImgs flip">
+          <div
+            class="col-lg-6 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="imgs/Neutral.png"
+              id="imgChange2"
+              class="img-fluid rpsImgs flip"
+            />
           </div>
         </div>
       </div>
@@ -58,17 +82,29 @@
           <div class="col-12 d-flex align-items-center justify-content-center">
             <div class="btn btn-transparent mx-auto">
               <button class="btn btn-transparent" onclick="playGame('rock')">
-                <img src="imgs/RockChoice.webp" class="img-fluid rpsChoices scale">
+                <img
+                  src="imgs/RockChoice.webp"
+                  class="img-fluid rpsChoices scale"
+                />
               </button>
             </div>
             <div class="btn btn-transparent mx-auto">
               <button class="btn btn-transparent" onclick="playGame('paper')">
-                <img src="imgs/PaperChoice.png" class="img-fluid rpsChoices scale">
+                <img
+                  src="imgs/PaperChoice.png"
+                  class="img-fluid rpsChoices scale"
+                />
               </button>
             </div>
             <div class="btn btn-transparent mx-auto">
-              <button class="btn btn-transparent" onclick="playGame('scissors')">
-                <img src="imgs/ScissorsChoice.webp" class="img-fluid rpsChoices scale">
+              <button
+                class="btn btn-transparent"
+                onclick="playGame('scissors')"
+              >
+                <img
+                  src="imgs/ScissorsChoice.webp"
+                  class="img-fluid rpsChoices scale"
+                />
               </button>
             </div>
           </div>
@@ -76,34 +112,52 @@
       </div>
       <div class="container d-sm-block d-lg-none d-xl-none">
         <div class="row my-5">
-          <div class="col-sm-6 d-flex justify-content-center align-items-center">
-            <img src="imgs/Neutral.png" id="imgChange" class="img-fluid rpsImgs">
+          <div
+            class="col-sm-6 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="imgs/Neutral.png"
+              id="imgChange1"
+              class="img-fluid rpsImgs"
+            />
           </div>
-          <div class="col-sm-6 d-flex justify-content-center align-items-center">
-            <i class="fa fa-heart fa-5x m-2" id="smallUserHeart1"></i>
-            <i class="fa fa-heart fa-5x m-2" id="smallUserHeart2"></i>
-            <i class="fa fa-heart fa-5x m-2" id="smallUserHeart3"></i>
+          <div
+            class="col-sm-6 d-flex justify-content-center align-items-center"
+          >
+            <i class="fa fa-heart fa-5x m-2" id="UserHeart1"></i>
+            <i class="fa fa-heart fa-5x m-2" id="UserHeart2"></i>
+            <i class="fa fa-heart fa-5x m-2" id="UserHeart3"></i>
           </div>
         </div>
         <div class="row my-5">
-          <div class="col-sm-6 d-flex justify-content-center align-items-center">
-            <i class="fa fa-heart fa-5x m-2" id="smallComputerHeart1"></i>
-            <i class="fa fa-heart fa-5x m-2" id="smallComputerHeart2"></i>
-            <i class="fa fa-heart fa-5x m-2" id="smallComputerHeart3"></i>
+          <div
+            class="col-sm-6 d-flex justify-content-center align-items-center"
+          >
+            <i class="fa fa-heart fa-5x m-2" id="ComputerHeart1"></i>
+            <i class="fa fa-heart fa-5x m-2" id="ComputerHeart2"></i>
+            <i class="fa fa-heart fa-5x m-2" id="ComputerHeart3"></i>
           </div>
-          <div class="col-sm-6 d-flex justify-content-center align-items-center">
-            <img src="imgs/Neutral.png" id="imgChange" class="img-fluid rpsImgs flip">
+          <div
+            class="col-sm-6 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="imgs/Neutral.png"
+              id="imgChange2"
+              class="img-fluid rpsImgs flip"
+            />
           </div>
-        </div>
-          
         </div>
       </div>
     </main>
     <footer>
-      <div class="bg-transparent d-flex justify-content-center align-items-center text-black text-center display-6 fixed-bottom border-top border-black border-2 d-none d-lg-block">
+      <div
+        class="bg-transparent d-flex justify-content-center align-items-center text-black text-center display-6 fixed-bottom border-top border-black border-2 d-none d-lg-block"
+      >
         ©2024 HBTJ Inc.
       </div>
-      <div class="bg-transparent d-flex justify-content-center align-items-center text-black text-center display-5 border-top border-black border-2 d-sm-block d-lg-none d-xl-none">
+      <div
+        class="bg-transparent d-flex justify-content-center align-items-center text-black text-center display-5 border-top border-black border-2 d-sm-block d-lg-none d-xl-none"
+      >
         ©2024 HBTJ Inc.
       </div>
     </footer>
