@@ -39,112 +39,296 @@
       </div>
     </header>
     <main>
-      <div class="container d-none d-lg-block">
-        <div class="row mb-5">
-          <div
-            class="col-lg-6 d-flex justify-content-center align-items-center"
-          >
-            <i class="fa fa-heart fa-5x m-2" id="UserHeart1"></i>
-            <i class="fa fa-heart fa-5x m-2" id="UserHeart2"></i>
-            <i class="fa fa-heart fa-5x m-2" id="UserHeart3"></i>
-          </div>
-          <div
-            class="col-lg-6 d-flex justify-content-center align-items-center"
-          >
-            <i class="fa fa-heart fa-5x m-2" id="ComputerHeart1"></i>
-            <i class="fa fa-heart fa-5x m-2" id="ComputerHeart2"></i>
-            <i class="fa fa-heart fa-5x m-2" id="ComputerHeart3"></i>
-          </div>
-        </div>
-        <div class="row my-5">
-          <div
-            class="col-lg-6 d-flex justify-content-center align-items-center"
-          >
-            <img
-              src="imgs/Neutral.png"
-              id="imgChange1"
-              class="img-fluid rpsImgs"
-            />
-          </div>
-          <div
-            class="col-lg-6 d-flex justify-content-center align-items-center"
-          >
-            <img
-              src="imgs/Neutral.png"
-              id="imgChange2"
-              class="img-fluid rpsImgs flip"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 d-flex align-items-center justify-content-center">
-            <div class="btn btn-transparent mx-auto">
-              <button class="btn btn-transparent" onclick="playGame('rock')">
-                <img
-                  src="imgs/RockChoice.webp"
-                  class="img-fluid rpsChoices scale"
-                />
-              </button>
+      <div class="container-fluid d-flex align-items-center justify-content-center size">
+        <div class="container-fluid d-block">
+          <div class="container d-none d-lg-block">
+            <div class="row mb-5">
+              <div
+                class="col-lg-6 d-flex justify-content-center align-items-center"
+              >
+                <i class="fa fa-heart fa-5x m-2" id="UserHeart1"></i>
+                <i class="fa fa-heart fa-5x m-2" id="UserHeart2"></i>
+                <i class="fa fa-heart fa-5x m-2" id="UserHeart3"></i>
+              </div>
+              <div
+                class="col-lg-6 d-flex justify-content-center align-items-center"
+              >
+                <i class="fa fa-heart fa-5x m-2" id="ComputerHeart1"></i>
+                <i class="fa fa-heart fa-5x m-2" id="ComputerHeart2"></i>
+                <i class="fa fa-heart fa-5x m-2" id="ComputerHeart3"></i>
+              </div>
             </div>
-            <div class="btn btn-transparent mx-auto">
-              <button class="btn btn-transparent" onclick="playGame('paper')">
-                <img
-                  src="imgs/PaperChoice.png"
-                  class="img-fluid rpsChoices scale"
-                />
-              </button>
-            </div>
-            <div class="btn btn-transparent mx-auto">
-              <button
-                class="btn btn-transparent"
-                onclick="playGame('scissors')"
+            <div class="row my-5">
+              <div
+                class="col-lg-6 d-flex justify-content-center align-items-center"
               >
                 <img
-                  src="imgs/ScissorsChoice.webp"
-                  class="img-fluid rpsChoices scale"
+                  src="imgs/Neutral.png"
+                  id="imgChange1"
+                  class="img-fluid rpsImgs"
                 />
-              </button>
+              </div>
+              <div
+                class="col-lg-6 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="imgs/Neutral.png"
+                  id="imgChange2"
+                  class="img-fluid rpsImgs flip"
+                />
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="container d-sm-block d-lg-none d-xl-none">
-        <div class="row my-5">
-          <div
-            class="col-sm-6 d-flex justify-content-center align-items-center"
-          >
-            <img
-              src="imgs/Neutral.png"
-              id="imgChange1sm"
-              class="img-fluid rpsImgs"
-            />
+          <div class="container-fluid d-lg-none d-xl-none">
+            <div class="row">
+              <div class="col-12 d-flex align-items-center justify-content-center">
+                <div class="btn btn-transparent mx-auto">
+                  <button class="btn btn-transparent" onclick="playGame('rock')">
+                    <img
+                      src="imgs/RockChoice.webp"
+                      class="img-fluid rpsChoicesSm scale"
+                    />
+                  </button>
+                </div>
+                <div class="btn btn-transparent mx-auto">
+                  <button class="btn btn-transparent" onclick="playGame('paper')">
+                    <img
+                      src="imgs/PaperChoice.png"
+                      class="img-fluid rpsChoicesSm scale"
+                    />
+                  </button>
+                </div>
+                <div class="btn btn-transparent mx-auto">
+                  <button
+                    class="btn btn-transparent"
+                    onclick="playGame('scissors')"
+                  >
+                    <img
+                      src="imgs/ScissorsChoice.webp"
+                      class="img-fluid rpsChoicesSm scale"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div
-            class="col-sm-6 d-flex justify-content-center align-items-center"
-          >
-            <i class="fa fa-heart fa-5x m-2" id="UserHeart1sm"></i>
-            <i class="fa fa-heart fa-5x m-2" id="UserHeart2sm"></i>
-            <i class="fa fa-heart fa-5x m-2" id="UserHeart3sm"></i>
+          <div class="container-fluid d-none d-lg-block d-xl-block">
+            <div class="row">
+              <div class="col-12 d-flex align-items-center justify-content-center">
+                <div class="btn btn-transparent mx-auto">
+                  <button class="btn btn-transparent" onclick="playGame('rock')">
+                    <img
+                      src="imgs/RockChoice.webp"
+                      class="img-fluid rpsChoices scale"
+                    />
+                  </button>
+                </div>
+                <div class="btn btn-transparent mx-auto">
+                  <button class="btn btn-transparent" onclick="playGame('paper')">
+                    <img
+                      src="imgs/PaperChoice.png"
+                      class="img-fluid rpsChoices scale"
+                    />
+                  </button>
+                </div>
+                <div class="btn btn-transparent mx-auto">
+                  <button
+                    class="btn btn-transparent"
+                    onclick="playGame('scissors')"
+                  >
+                    <img
+                      src="imgs/ScissorsChoice.webp"
+                      class="img-fluid rpsChoices scale"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="row my-5">
-          <div
-            class="col-sm-6 d-flex justify-content-center align-items-center"
-          >
-            <i class="fa fa-heart fa-5x m-2" id="ComputerHeart1sm"></i>
-            <i class="fa fa-heart fa-5x m-2" id="ComputerHeart2sm"></i>
-            <i class="fa fa-heart fa-5x m-2" id="ComputerHeart3sm"></i>
+          <div class="container d-sm-block d-lg-none d-xl-none">
+            <div class="row my-5">
+              <div
+                class="col-sm-6 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="imgs/Neutral.png"
+                  id="imgChange1sm"
+                  class="img-fluid rpsImgs"
+                />
+              </div>
+              <div
+                class="col-sm-6 d-flex justify-content-center align-items-center"
+              >
+                <i class="fa fa-heart fa-5x m-2" id="UserHeart1sm"></i>
+                <i class="fa fa-heart fa-5x m-2" id="UserHeart2sm"></i>
+                <i class="fa fa-heart fa-5x m-2" id="UserHeart3sm"></i>
+              </div>
+            </div>
+            <div class="row my-5">
+              <div
+                class="col-sm-6 d-flex justify-content-center align-items-center"
+              >
+                <i class="fa fa-heart fa-5x m-2" id="ComputerHeart1sm"></i>
+                <i class="fa fa-heart fa-5x m-2" id="ComputerHeart2sm"></i>
+                <i class="fa fa-heart fa-5x m-2" id="ComputerHeart3sm"></i>
+              </div>
+              <div
+                class="col-sm-6 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="imgs/Neutral.png"
+                  id="imgChange2sm"
+                  class="img-fluid rpsImgs flip"
+                />
+              </div>
+            </div>
           </div>
-          <div
-            class="col-sm-6 d-flex justify-content-center align-items-center"
-          >
-            <img
-              src="imgs/Neutral.png"
-              id="imgChange2sm"
-              class="img-fluid rpsImgs flip"
-            />
+          <div class="row">
+            <div class="col-12">
+              <div class="modal fade hide" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="1" aria-labelledby="staticBackdropLabel">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <a href="index.html"><button>Replay</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal fade hide" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="1" aria-labelledby="staticBackdropLabel">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <a href="index.html"><button>Replay</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal fade hide" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="1" aria-labelledby="staticBackdropLabel">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <a href="index.html"><button>Replay</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal fade hide" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="1" aria-labelledby="staticBackdropLabel">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <a href="index.html"><button>Replay</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal fade hide" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="1" aria-labelledby="staticBackdropLabel">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <a href="index.html"><button>Replay</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal fade hide" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="1" aria-labelledby="staticBackdropLabel">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <a href="index.html"><button>Replay</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal fade hide" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="1" aria-labelledby="staticBackdropLabel">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <a href="index.html"><button>Replay</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal fade hide" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="1" aria-labelledby="staticBackdropLabel">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <a href="index.html"><button>Replay</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal fade hide" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="1" aria-labelledby="staticBackdropLabel">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <a href="index.html"><button>Replay</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
