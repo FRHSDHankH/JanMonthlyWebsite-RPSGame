@@ -47,6 +47,14 @@
   visibility: hidden;
 }
 
+.hided {
+  display: none;
+}
+
+.showd {
+  display: block;
+}
+
 .shake1 {
   animation: shake 1.5s;
   animation-iteration-count: 1;
