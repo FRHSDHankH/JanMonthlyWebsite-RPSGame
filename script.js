@@ -151,35 +151,29 @@ function playGame(userChoice) {
   }, 1500)
 }
 
-let modal1 = document.getElementById('staticBackdrop1')
-let modal2 = document.getElementById('staticBackdrop2')
-let modal3 = document.getElementById('staticBackdrop3')
-let modal4 = document.getElementById('staticBackdrop4')
-let modal5 = document.getElementById('staticBackdrop5')
-let modal6 = document.getElementById('staticBackdrop6')
+let modal1 = document.getElementById('modal1')
+let modal2 = document.getElementById('modal2')
+let modal3 = document.getElementById('modal3')
+let modal4 = document.getElementById('modal4')
+let modal5 = document.getElementById('modal5')
+let modal6 = document.getElementById('modal6')
 
 if(userScore===3) {
   if(computerScore===0) {
-    modal1.classList.add('showd');
-    modal1.classList.remove('hided');
+    modal1.style.display = "block";
   } else if(computerScore===1) {
-    modal2.classList.add('showd');
-    modal1.classList.remove('hided');
+    modal2.style.display = "block";
   } else if(computerScore===2) {
-    modal3.classList.add('showd');
-    modal1.classList.remove('hided');
+    modal3.style.display = "block";
   }
 }
 
 if(computerScore===3) {
   if(userScore===0) {
-    modal4.classList.add('showd');
-    modal1.classList.remove('hided');
+    modal4.style.display = "block";
   } else if(userScore===1) {
-    modal5.classList.add('showd');
-    modal1.classList.remove('hided');
+    modal5.style.display = "block";
   } else if(userScore===2) {
-    modal6.classList.add('showd');
-    modal1.classList.remove('hided');
+    modal6.style.display = "block";
   }
 }
